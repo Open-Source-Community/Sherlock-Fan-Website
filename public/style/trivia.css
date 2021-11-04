@@ -1,0 +1,73 @@
+@font-face {
+    font-family: sher;
+    src: url('/static/style/fonts/AbrilFatface-Regular.ttf');
+}
+
+
+h2{
+    text-align: center;
+    font-size: 40px;
+
+}
+body{
+    height: 800px;
+    margin: 0%;
+    background-color: #10171D;
+}
+
+.container{
+    width: 100%;
+    margin: auto;
+}
+
+
+.q{
+    height: 400px;
+    background-color: #EEE;
+    margin-top: 10%;
+    font-family: sher;
+    padding: 1%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ch{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #EEE;
+    box-shadow: -3px -3px 10px rgba(0,0,0,0.5);
+    height: 200px;
+    border: 1px solid black;
+    margin: 0% 4%;
+    top: -40px;
+}
+
+.btn, .btn-secondary{
+    font-size: 25px;
+    background-color: transparent;
+    border-color: transparent;
+    color:#10171D;
+}
+
+.btn:hover, .btn-secondary:hover, .btn-secondary:not(:disabled):not(.disabled).active, .btn-secondary:not(:disabled):not(.disabled):active, .show > .btn-secondary.dropdown-toggle
+{
+    background-color: transparent;
+    border-color: transparent;
+    color:#10171D;
+}
+
+
+
+.btn-secondary.focus, .btn-secondary:focus{
+    box-shadow: 0px 0px 0px transparent !important;
+}
+
+@media (max-width:500px){
+    h2{
+        font-size: 30px;
+    }
+
+    
+}

@@ -13,7 +13,7 @@ function getVal4(){val4 = document.getElementById('square-4').value;}
 function validate(){
     var res = val1+val2+val3+val4; 
     if(res == "SHER" || res=="sher")
-        location.href = "../homepage/index.html";
+        location.href = "/home";
     else return false;
 }
 

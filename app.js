@@ -35,6 +35,10 @@ app.get('/trivia', (req,res)=>{
     })
     
 
+    app.get('/home', (req,res)=>{
+      res.render('home.ejs')
+    })
+
 const PORT = 5000;
 
 app.listen(PORT, console.log(`Server running on  ${PORT}`));

@@ -1,0 +1,195 @@
+@font-face {
+    font-family: sher;
+    src: url("/static/fonts/AbrilFatface-Regular.ttf");
+}
+
+body{
+    margin: 0%;
+    background-color: #10171D;
+}
+
+.container{
+    width: 100%;
+    margin: auto;
+}
+
+.header{
+    background-image: url("/static/media/HomePage bg.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;    
+    background-attachment: fixed;
+    box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.7);
+}
+
+.i{
+    width: 40%;
+    margin-top: 25%;
+    padding-bottom: 2%;
+}
+
+.char{
+    margin: 5% 0%;
+}
+
+.imgc{
+    margin: 2%;
+}
+
+.c img{
+    width: 100%;
+    height: 100%;
+    border-radius: 6%;
+    box-shadow: 1px 10px 15px rgba(0, 0, 0, 0.5);
+    padding-top: 5%;
+}
+
+h2{
+    text-align: center;
+    color: #EEE;
+    font-size: 50px;
+    font-weight: bold;
+    font-family: sher;
+    margin: 5% 0%;
+}
+
+.dis{
+    padding: 0% !important;
+}
+
+p{
+    padding-bottom: 20%;
+    color: #EEE;
+    font-family: Arial;
+    opacity: 80%;
+    font-size: 18px;
+}
+
+.card-img-overlay{
+    background-color: rgba(16, 23, 29, 0.4);
+}
+
+.trivia{
+    display: none;
+    background-color: #0C0E10;
+    padding: 5% 0%;
+    box-shadow: 5px -10px 15px rgba(0, 0, 0, 0.5);
+}
+
+
+.G h2{
+    font-size: 80px;
+    opacity: 50%;
+}
+
+.G h2:hover{
+    color: white;
+    opacity: 100%;
+}
+
+a,a:hover{
+    text-decoration: none;
+}
+
+
+
+.G{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.pChar{
+    display: none;
+}
+
+.c:hover img{
+    transform: rotateY(180deg);
+    display: none;
+}
+
+.c:hover .pChar{
+    width: 100%;
+    height: 100%;
+    display: block;
+    background-color: rgb(172, 189, 226);
+}
+
+
+
+
+.flip {
+    margin: 20% 0%;
+    background-color: transparent;
+    width: 250px;
+    height: 350px;
+    perspective: 1000px; 
+}
+  
+.flip-all {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+  
+.flip:hover .flip-all {
+    transform: rotateY(180deg);
+}
+
+.flip-front img{
+    border-radius: 5%;
+}
+
+.flip-front, .flip-back {
+    border-radius: 6%;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.5);
+    backface-visibility: hidden;
+}
+  
+.flip-front {
+    background-color: #bbb;
+    color: black;
+}
+  
+.flip-back {
+    background-color: #141F29;
+    color: white;
+    transform: rotateY(180deg);
+}
+
+.flip-back p{
+    padding: 25% 2%;
+    text-align: center;
+}
+
+.modal-content{
+    background-color: #10171D;
+    color: white;
+}
+
+.modal-header,.modal-footer{
+    border: none;
+}
+
+.btn-primary, .btn-primary:hover{
+    background-color: #141F29;
+    border-color: #141F29;
+}
+
+.btn-secondary:hover, .btn-secondary{
+    background-color: whitesmoke;
+    border-color: whitesmoke;
+    color: #0C0E10;
+}
+
+.modal.show .modal-dialog{
+    margin-top: 10%;
+}

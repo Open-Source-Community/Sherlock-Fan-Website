@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="static/style/bootstrap-4.3.1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="static/style/trivia.css">
+
     <title>Document</title>
 </head>
 <body>
@@ -11,34 +15,48 @@
 
     <% for(var i=0; i<objects.length ; i++) { %>
 
-        <!-- question  -->
-        
-        <%= objects[i].question %>
-
-
-            <!-- options  -->
-            <br>
-       <% for(var j=0 ; j<3;j++){ %>
-         
-
-        
-        <% if(objects[i].options[j]==objects[i].correctAnswer ) { %>
-              <button onclick="this.style.backgroundColor='green' ">  <%=objects[i].options[j] %>  </button>
-
-         <% } else { %>
-            <button onclick="this.style.backgroundColor='red' ">  <%=objects[i].options[j] %>  </button>
-            <%}%>
-
-        <%}%>  
-        <br>
-
-            
-              <!-- correct answer  -->
-              <div style="display: none; background-color: green;">
-                  <%= objects[i].correctAnswer %>
+        <div class="content">
+            <div class="container">
+                <div class="row">
+                    <div class="q col-lg-12 col-md-12 col-sm-12">
+                        <h2>
+                            <%= objects[i].question %>
+                        </h2>
+                    </div>
                 </div>
+                <div class="row">
+                    <% for(var j=0; j<3; j++) { %>
+    
+                    <% if(objects[i].options[j]==objects[i].correctAnswer ) { %>
+                        <div class="ch col-lg-3 col-md-3 col-sm-3" onclick="this.style.backgroundColor='green' ">
+                            <button type="button" class="btn btn-secondary" > <%=objects[i].options[j] %> </button>
+                        </div>
+          
+                   <% } else { %>
+    
+                    <div onclick="this.style.backgroundColor='red' " class="ch col-lg-3 col-md-3 col-sm-3" >
+                        <button  type="button" class="btn btn-secondary"><%=objects[i].options[j] %> </button>
+                    </div>
+    
+                      <%}%>
+    
+                      <%} %>
+                    
+    
+                  
+       
+                </div>
+            </div>
+        </div>
+    
+            
         
     <%}%>
 
+
+    <script src="js/jquery.js"></script>
+    <script src="bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
+    <script src="js/js2.js"></script>
+   
 </body>
 </html>
